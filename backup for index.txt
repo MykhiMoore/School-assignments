@@ -1,0 +1,13 @@
+ <table>
+    <h2>education<br><br><br><br><br><br></h2>
+    <tr>
+      <th>Year</th>
+      <th>Year</th>
+      <th>Year</th>
+    </tr>
+    <h2>Experince<br><br><br><br><br><br></h2>
+    <h2>Skills<br><br><br><br><br><br></h2>
+    <h2>Certificates<br><br><br><br><br><br></h2>
+    <h2>Awards<br><br><br><br><br><br></h2>
+   </main>
+   </table>
