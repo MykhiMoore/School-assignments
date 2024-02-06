@@ -1,13 +1,13 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: #ccc;
+ 
     position: relative;
 }
 .main-box{
     background: white;
     border-radius: 20px;
-    height: 800px;
+    height: 1080px;
     width: 1858px;
 }
 .box{
@@ -81,17 +81,20 @@ table{
     position: absolute;
     z-index: 2;
     left: 50%;
-    top: 30%;
+    top: 56%;
     transform: translate(-50%,-50%);
-    width: 98%;
-    background: white;
+    width: 100%;
+    background: none;
     text-align: center;
+    border-collapse: separate;
+    border-spacing: 50px;
     
 }
 th,td{
-    padding: 10px 15px;
+    padding: 8px 1px;
     border: 1px solid #47476b;
     text-align: left;
+    padding-top: 10px
 }
 th{
     background: #d1d1e0;
@@ -100,9 +103,6 @@ th{
 }
 td{
     font-family: 'open Sans',sans-serif;
-}
-.table2{
-    width: 400px;
 }
 
 h1{
