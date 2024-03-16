@@ -552,7 +552,7 @@ header .song_slide .content p{
           width: 90%;
           height: auto;
           margin: auto;
-          /*border: 1px solid #fff;*/
+          border: 1px solid #fff;
           margin-top: 15px;
          }
          header .song_slide .popular_artist .h4{

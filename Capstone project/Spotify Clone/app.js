@@ -79,22 +79,23 @@ const songs = [
     //all Object type
 ]
 
-Array.from(document.getElementsByClassName('songItem')).forEach((Element, i)=>{
-    Element.getElementsByTagName('img')[0].src = songs[i].poster;
-    Element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
+Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
+    element.getElementsByTagName('img')[0].src = songs[i].poster;
+    element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 })
 
 
-let masterplay = document.getElementById('masterPlay');
+let masterPlay = document.getElementById('masterPlay');
 
-masterplay.addEventListener('click',()=>{
+
+masterPlay.addEventListener('click',()=>{
     if (music.paused || music.currentTime <=0) {
         music.play();
-        masterplay.classList.remove('bi-play-fill');
-        masterplay.classList.add('bi-pause-fill');
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
     } else {
         music.pause();
-        masterplay.classList.add('bi-play-fill');
-        masterplay.classList.remove('bi-pause-fill');       
+        masterPlay.classList.add('bi-play-fill');
+        masterPlay.classList.remove('bi-pause-fill');       
     }
 })
