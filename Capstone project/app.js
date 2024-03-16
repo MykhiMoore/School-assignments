@@ -88,15 +88,13 @@ Array.from(document.getElementsByClassName('songItem')).forEach((Element, i)=>{
 let masterplay = document.getElementById('masterPlay');
 
 masterplay.addEventListener('click',()=>{
-    if (music.pausedc || music.currentTime <=0) {
+    if (music.paused || music.currentTime <=0) {
         music.play();
         masterplay.classList.remove('bi-play-fill');
-        masterplay.classList.remove('bi-pause-fill');
-
+        masterplay.classList.add('bi-pause-fill');
     } else {
         music.pause();
         masterplay.classList.add('bi-play-fill');
-        masterplay.classList.remove('bi-pause-fill');
-        
+        masterplay.classList.remove('bi-pause-fill');       
     }
 })
