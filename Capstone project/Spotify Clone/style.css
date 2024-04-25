@@ -163,7 +163,7 @@ header .menu_slide .menu_song li img{
     margin-right: 3px;
     border-radius: 10px 10px 0px 0px;
     background: #36e2ec;
-    animation: wave .5s linear infinite;
+    animation: unset;
  }
  header .master_play .wave .wave1:nth-child(2){
     height: 13px;
@@ -173,6 +173,8 @@ header .menu_slide .menu_song li img{
     height: 8px;
     /*animation-delay: .8s;*/
  }
+ /* javascript class wave  */
+ 
  header .master_play .active2 .wave1{
   animation: wave .5s linear infinite;
 }
@@ -183,8 +185,8 @@ header .master_play .active2 .wave1:nth-child(3){
   animation-delay: .8s;
 }
 
+/* javascript class wave  */
  
-
  @keyframes wave{
     0%{
         height: 10px;
@@ -252,6 +254,7 @@ header .master_play .active2 .wave1:nth-child(3){
     width: 0%;
     height: 100%;
     top: 0;
+    transition: 1s linear;
   }
   
   header .master_play .bar .dot{
@@ -305,7 +308,7 @@ header .master_play .active2 .wave1:nth-child(3){
    top: -10px;
    left: 0;
    cursor: pointer;
-   z-index: 9999999;
+   z-index: 99999999;
    opacity: 0;
   }
   header .master_play .vol .vol_bar{
@@ -314,6 +317,7 @@ header .master_play .active2 .wave1:nth-child(3){
     width: 0%;
     height: 100%;
     top: 0;
+    transition:  1s linear;
   }
   
   header .master_play .vol .dot{
@@ -347,7 +351,7 @@ header .master_play .active2 .wave1:nth-child(3){
     position: absolute;
     width: 36%;
     height: 265px;
-    background: url('images/pink_.png');
+    background: url('img/pink_.jpeg');
     z-index: -1;
     right: 50px;
     top: 1px;
@@ -544,10 +548,10 @@ header .song_slide .content p{
    font-size: 30px;
    cursor: pointer;
    transition: .3s linear;
-   opacity: 0;
+   opacity: 1;
    }
    header .song_slide .popular_artist .pop_song li .img_play:hover .bi{
-    opacity: -1;
+    opacity: 1;
     }
     header .song_slide .popular_artist .pop_song li h5{
       padding: 5px -2px 0px 5px;
@@ -602,8 +606,12 @@ header .song_slide .content p{
          cursor: pointer;
          }
          header .song_slide .popular_artist .item li img{
-         height: 130%;
-         width: 130%;
+         height: 120%;
+         width: 120%;
          border-radius: 50%;
          position: absolute;
+        }
+        .img-logo{
+          width: 150px;
+          height: 80px;
         }
