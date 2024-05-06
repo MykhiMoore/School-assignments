@@ -99,7 +99,7 @@ header .menu_slide .playlist .active .bi{
 }
 header .menu_slide .menu_song{
     width:  99%;
-    height: 547px;
+    height: 560px;
     /*border: 1px solid#fff;*/
     margin-top: 40px;
 }
@@ -220,6 +220,7 @@ header .master_play .active2 .wave1:nth-child(3){
     color: white;
     margin: 0px 20px 0px 40px;
   }
+  
   header .master_play .icon .bi{
     cursor: pointer;
     outline: none;
